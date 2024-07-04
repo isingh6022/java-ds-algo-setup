@@ -1,0 +1,42 @@
+# Compiling the Java file: F:\DS_ALGO\java\setuptest\setuptesting\TestingJavaSetup.java.
+javac -d classes F:\DS_ALGO\java\setuptest\setuptesting\TestingJavaSetup.java
+
+
+# Running the class: setuptest.setuptesting.TestingJavaSetup
+## Running with input file: TestingJavaSetup copy 2.txt
+Hello World!
+Hello World 3.1
+
+
+Hello World 3.2
+
+
+
+Hello World 3.3
+
+
+
+Printed the file.
+
+## Running with input file: TestingJavaSetup copy.txt
+Hello World!
+Hello World 2.1
+
+
+Hello World 2.2
+Hello World 2.3
+
+
+
+Hello World 2.1
+Printed the file.
+
+## Running with input file: TestingJavaSetup.txt
+Hello World!
+Hello World 1.1
+
+
+Hello World 1.2
+Hello World 1.3
+Printed the file.
+
