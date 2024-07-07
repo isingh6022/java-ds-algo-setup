@@ -77,18 +77,18 @@ def runCmd(cmd: str):
 
 def runClass(javaClassFile: File, inputFiles: List[File]):
     className = javaClassFile.getFullName().replace('.java', '')
-    runCmd = 'java -cp ./classes %s'%className
+    command = 'java -cp ./classes %s'%className
     print('# Running the class: %s'%className)
 
     if len(inputFiles) == 0:
-        runCmd(runCmd)
+        runCmd(command)
         return
 
     for fileData in inputFiles:
         print('## Running with input file: %s'%fileData.fileName)
         inputFile = open(fileData.path, 'r')
 
-        p = run(runCmd, stdout=PIPE, input=inputFile.read(), encoding='ascii')
+        p = run(command, stdout=PIPE, input=inputFile.read(), encoding='ascii')
         print(p.stdout)
 
 
